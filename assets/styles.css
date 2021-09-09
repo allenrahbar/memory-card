@@ -41,7 +41,7 @@
     width: calc(25% - 10px);
     height: calc(25% - 10px);
     margin: 5px;
-    box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 4px 4px rgb(255, 140, 0);
     transform-style: preserve-3d;
     position: relative;
     transform: scale (1);
