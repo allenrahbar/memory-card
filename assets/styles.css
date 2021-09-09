@@ -41,7 +41,15 @@
     width: calc(25% - 10px);
     height: calc(25% - 10px);
     margin: 5px;
+    box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+    transform-style: preserve-3d;
     position: relative;
+    transform: scale (1);
+}
+/* code learned from https://www.w3schools.com/cssref/css3_pr_transform.asp */
+.memory-card:active {
+  transform: scale(0.95);
+  transition: transform 0.2s;
 }
 .card-back, .front1, .front2, .front3, .front4, .front5, .front6, .front7, .front8 {
     width: 100%;
