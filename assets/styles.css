@@ -30,8 +30,8 @@
 
 /* styles for game board */
 .memory-game {
-    width: 80%;
-    height: 80vh;
+    width: 70%;
+    height: 70vh;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
