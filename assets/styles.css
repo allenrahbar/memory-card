@@ -43,7 +43,6 @@
     margin: 5px;
     box-shadow: 4px 4px rgb(255, 140, 0);
     position: relative;
-    transform: scale (1);
     transform-style: preserve-3d ;
     transition: transform 0.5s;
 }
