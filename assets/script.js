@@ -4,7 +4,7 @@ const cards = document.querySelectorAll('.memory-card');
 
 let hasFlippedCard = false;
 let lockBoard= false;
-let firstCard, secondCard;
+let firstCard,  secondCard;
 
 // Flip card function help with code from https://www.w3schools.com/jsref/prop_element_classlist.asp
 // Function for matching cards
@@ -20,11 +20,12 @@ function flipCard() {
         return;
     }
     secondCard = this;
+    lockBoard= true;
     checkForMatch();
 }
 
 function checkForMatch () {
-     let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
+     let isMatch = firstCard.dataset.animal === secondCard.dataset.animal;
     isMatch ? disableCards() : unflipCards();
     }
     
@@ -34,7 +35,6 @@ function disableCards () {
     resetBoard();
 }
 function unflipCards () {
-    lockBoard = true;
 
 // code taken from https://www.w3schools.com/jsref/met_win_settimeout.asp
 
