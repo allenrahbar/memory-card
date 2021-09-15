@@ -44,7 +44,7 @@ function unflipCards () {
         resetBoard();
     }, 1500);
 }
-// function for resetting board
+// function for resetting board after each card
 function resetBoard () {
     [hasFlippedCard, lockBoard] = [false, false];
     [firstCard, secondCard] = [null, null];
@@ -60,6 +60,9 @@ function resetBoard () {
 
 
 cards.forEach(card => card.addEventListener('click', flipCard));
+
+// function for reset game button
+
 
 
 
